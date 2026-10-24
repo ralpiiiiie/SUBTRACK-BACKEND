@@ -96,11 +96,6 @@ return [
             'prefix_indexes' => true,
             'search_path' => 'public',
             'sslmode' => env('DB_SSLMODE', env('APP_ENV') === 'production' ? 'require' : 'prefer'),
-            // Connection pool settings for Neon serverless
-            'options' => [
-                'connect_timeout' => 10,
-                'idle_in_transaction_session_timeout' => 30000,
-            ],
         ],
 
         'sqlsrv' => [
